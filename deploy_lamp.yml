@@ -1,7 +1,5 @@
 ---
 - name: install apache & php & mysql
-  become: true
-  become_user: root
   gather_facts: true
   tasks:
     - name: Install Apache2
