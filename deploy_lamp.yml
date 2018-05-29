@@ -1,5 +1,6 @@
 ---
 - name: install apache & php & mysql
+  hosts: ubuntu
   gather_facts: true
   tasks:
     - name: Install Apache2
