@@ -1,7 +1,7 @@
 ---
 - name: install apache & php & mysql
-  hosts: ubuntu
-  gather_facts: true
+  hosts: all
+  gather_facts: no
   tasks:
     - name: Install Apache2
       apt: name=apache2 update_cache=yes state=latest
