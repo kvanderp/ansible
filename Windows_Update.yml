@@ -13,4 +13,4 @@
 
     # reboot only if required
     - win_reboot:
-  when: result.reboot_required
+      when: result.reboot_required
