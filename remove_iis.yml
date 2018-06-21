@@ -1,6 +1,7 @@
 ---
 - name: Remove IIS
   hosts: all
+  connection: winrm
   tasks:
     - name: Remove IIS (Web-Server only)
       win_feature:
