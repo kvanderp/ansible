@@ -1,6 +1,7 @@
 ---
 - name:  Windows Update
   hosts: all
+  connection: winrm
   gather_facts: false
   tasks:
     - name: Running Windows Update
@@ -13,4 +14,4 @@
 
     # reboot only if required
     - win_reboot:
-  when: result.reboot_required
+      when: result.reboot_required
