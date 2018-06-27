@@ -19,8 +19,8 @@
   gather_facts: no
   vars:
     setup_user: "admin"
-    setup_pass: "Studerr0cks!"
-    appliance: "192.168.2.1"
+    setup_pass: "admin"
+    appliance: "192.168.71.141"
 
   tasks:
   - name: Change preference from basic to advanced
