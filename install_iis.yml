@@ -1,5 +1,6 @@
 ---
 - name: Install IIS
+  connection: winrm
   hosts: all
   tasks:
     - name: Install IIS (Web-Server only)
