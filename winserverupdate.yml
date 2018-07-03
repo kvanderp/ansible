@@ -1,0 +1,15 @@
+- name: Run Updates on Windows Servers then wait 2 mins
+  hosts: winserver
+  connection: winrm
+  tasks:
+    win_updates:
+      category_names:
+        - Application
+        - CriticalUpdates
+        - DefinitionUpdates
+        - SecurityUpdates
+        - Updates
+      whitelist:
+        - KB4093120
+    reboot: yes
+    reboot_timeout: 120

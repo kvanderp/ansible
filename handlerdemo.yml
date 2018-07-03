@@ -1,0 +1,14 @@
+---
+- hosts: server
+  gather_facts: false
+  tasks:
+    - name: install apache
+      apt:
+        name: apache2
+        state: latest
+      notify:
+        - reboot server
+
+  handlers:
+    - name: reboot server
+      command: /sbin/reboot

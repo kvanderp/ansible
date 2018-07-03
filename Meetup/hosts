@@ -1,0 +1,5 @@
+[BIG-IPA]
+10.1.1.245
+
+[LAMPServer]
+192.168.71.130 ansible_ssh_user=kvanderp

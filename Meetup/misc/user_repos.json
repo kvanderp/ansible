@@ -1,0 +1,11 @@
+{
+	"repos": [
+		{
+			"name":"Ansible_Meetups",
+			"repo":"https://github.com/jmcalalang/Ansible_Meetups.git",
+			"branch":"master",
+			"skip":false,
+			"skipinstall":true
+		}
+	]
+}
