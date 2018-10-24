@@ -9,7 +9,7 @@
 #      are defined next to "include"
 
 - name: Connecting...
-  hosts: {{bigip}}
+  hosts: "{{bigip}}"
   connection: local
 
   tasks: 
