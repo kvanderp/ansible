@@ -18,6 +18,6 @@
          server: "{{bigip}}"
          user: "admin"
          password: "admin"
-         include: "interface,vlan"
+         include: "interface"
          validate_certs: "no"
      delegate_to: localhost
