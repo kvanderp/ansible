@@ -9,13 +9,13 @@
 #      are defined next to "include"
 
 - name: Connecting...
-  hosts: 10.0.0.160
+  hosts: {{bigip}}
   connection: local
 
   tasks: 
    - name: Collect BIG-IP facts
      bigip_facts:
-         server: "10.0.0.160"
+         server: "{{bigip}}"
          user: "admin"
          password: "admin"
          include: "interface,vlan"
